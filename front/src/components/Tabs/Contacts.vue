@@ -27,7 +27,7 @@ const links = [
 }
 
 .card {
-  height: 400px;
+  height: 300px;
   background-color: #2d2d2d;
   border: 0;
   border-radius: 16px;
