@@ -20,16 +20,17 @@ button {
   width: calc(100% - 16px);
   margin: 8px;
   height: 36px;
-  background-color: #43478c;
+  background-color: transparent;
   color: white;
   font-size: 18px;
   border: 0;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: white;
-  color: #43478c;
+  background-color: var(--color-theme);
+  transition: 0.1s;
 }
 
 button:not(:hover) {

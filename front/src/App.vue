@@ -17,5 +17,5 @@ provide('currentTab', {
 
 <template>
   <Tabs></Tabs>
-  <ActiveTab>121</ActiveTab>
+  <ActiveTab></ActiveTab>
 </template>

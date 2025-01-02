@@ -1,5 +1,6 @@
 <script setup>
 import { inject, computed } from 'vue';
+import Tab from './Tab.vue'
 import Info from './Tabs/Info.vue'
 import Games from './Tabs/Games.vue'
 import Films from './Tabs/Films.vue'
@@ -14,10 +15,18 @@ const showContacts = computed(() => currentTab.value == 4);
 
 <template>
     <div class='main'>
-        <Info v-if='showInfo'></Info>
-        <Games v-if='showGames'></Games>
-        <Films v-if='showFilms'></Films>
-        <Contacts v-if='showContacts'></Contacts>
+        <Tab title='Информация 📌' v-if='showInfo'>
+            <Info></Info>
+        </Tab>
+        <Tab title='Пройденные игры 👑' v-if='showGames'>
+            <Games></Games>
+        </Tab>
+        <Tab title='Рецензии на фильмы 📽️' v-if='showFilms'>
+            <Films></Films>
+        </Tab>
+        <Tab title='Связь со мной 🧾' v-if='showContacts'>
+            <Contacts></Contacts>
+        </Tab>
     </div>
 </template>
 
@@ -27,6 +36,7 @@ const showContacts = computed(() => currentTab.value == 4);
     height: calc(100% - 16px);
     position: absolute;
     left: 320px;
+    top: 0;
     margin: 8px;
 }
 </style>
