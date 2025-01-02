@@ -1,5 +1,5 @@
 # Site
-![Главная страница](https://github.com/user-attachments/assets/3d517d2e-fe32-420e-bd81-70473cf5b83c)
+![Главная страница](https://github.com/user-attachments/assets/b70d3102-d981-48e2-8a71-472bf4f5e0f2)
 
 ## Запуск Front
 ```
